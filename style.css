@@ -1,0 +1,1289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1{
+	color: rgb(35, 35, 85);
+   }
+   h2{
+	color: rgb(35, 35, 85);
+   }
+   h3{
+	color: rgb(35, 35, 85);
+   }
+   h4{
+	color: rgb(35, 35, 85);
+   }
+   h5{
+	color: rgb(35, 35, 85);
+   }
+   h6{
+	color: rgb(35, 35, 85);
+   }
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+h1
+{
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: rgb(35, 35, 85);
+}
+
+span
+{
+	font-size: .9rem;
+}
+
+h6
+{
+	font-size: 1.1rem;
+	color: rgb(24, 24, 49);
+}
+
+
+/*------------- Navigation style start ------------*/
+nav
+{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vw 8vw;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+}
+
+nav .logo
+{
+	width: 60px;
+	cursor: pointer;
+}
+
+nav .navigation
+{
+	display: flex;
+}
+
+#menu-btn
+{
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+
+#menu-close
+{
+	display: none;
+}
+
+nav .navigation ul
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav .navigation ul li
+{
+	list-style: none;
+	margin-left: 30px;
+}
+
+nav .navigation ul li a
+{
+	text-decoration: none;
+	color: rgb(21, 21, 100);
+	font-size: 16px;
+	font-weight: 500;
+	transition: 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover
+{
+	color: #FDC93B;
+
+}
+/*------------- Navigation style end ------------*/
+
+
+
+/*------------- Hero section styling start --------------*/
+#home
+{
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("../img/back.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 40px;
+}
+
+#home h2
+{
+	color: #fff;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+}
+
+#home p
+{
+	width: 50%;
+	color: #fff;
+	font-size: 0.9rem;
+	line-height: 25px;
+}
+
+#home .btn
+{
+	margin-top: 30px;
+}
+
+#home a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+}
+
+#home a.blue
+{
+	color: #fff;
+	background: rgb(21, 21, 100);
+	transition: 0.3s ease;
+}
+
+#home a.blue:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+
+#home a.yellow
+{
+	color: #fff;
+	background: #fdc938;
+	transition: 0.3s ease;
+}
+
+#home a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+/*------------- Hero section styling end --------------*/
+
+
+/*------------- Features section styling start -------------*/
+#features
+{
+	padding: 5vw 8vw 0 8vw;
+	text-align: center;
+}
+
+#features .fea-base
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#features .fea-box
+{
+	background: #edf1f2;
+	text-align: start;
+	padding: 1.2rem;
+	border-radius: 6px;
+}
+
+#features .fea-box i
+{
+	font-size: 2.3rem;
+	color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3
+{
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: rgb(46, 46, 59);
+	padding: 13px 0 7px 0;
+}
+
+#features .fea-box p
+{
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgb(70, 70, 87);
+}
+/*------------- Features section styling end -------------*/
+
+
+/*------------- Courses section styling start ------------*/
+#course
+{
+	padding: 8vw 8vw 8vw 8vw;
+	text-align: center;
+}
+
+#course .course-box
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#course .courses
+{
+	text-align: start;
+	background: #edf1f2;
+	height: 100%;
+	position: relative;
+}
+
+#course .courses img
+{
+	width: 100%;
+	height: 60%;
+	background-size: cover;
+	background-position: center;
+}
+
+#course .courses .details
+{
+	padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i
+{
+	color: #fdc93b;
+	font-size: .9rem;
+}
+
+#course .courses .cost
+{
+	background-color: rgb(74, 74, 136);
+	color: #fff;
+	line-height: 70px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	right: 15px;
+	bottom: 100px;
+}
+/*------------- Courses section styling end ------------*/
+
+
+/*------------- Experts section styling starts ----------*/
+#experts
+{
+	padding: 1vw 8vw 8vw 8vw;
+	text-align: center;
+}
+
+#experts .expert-box
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#experts .expert-box .profile
+{
+	background: #fafaf1;
+	padding: 30px 10px;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+#experts .expert-box .profile:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.pro-links
+{
+	margin-top: 10px;
+}
+
+.pro-links i
+{
+	padding: 10px 13px;
+	border: 1px solid rgb(21, 21, 100);
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.pro-links i:hover
+{
+	background: rgb(21, 21, 100);
+	color: #fff;
+}
+/*------------- Experts section styling ends ----------*/
+
+
+
+/*------------- Footer section styling starts ------------*/
+footer
+{
+	padding: 8vw;
+	background-color: #101c32;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+footer .footer-col
+{
+	padding-bottom: 40px;
+}
+
+footer h3
+{
+	color: rgb(241, 240, 245);
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+
+footer li
+{
+	list-style: none;
+	color: #7b838a;
+	padding: 10px 0;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+footer li:hover
+{
+	color: rgb(241, 240, 245);
+}
+
+footer p
+{
+	color: #7b838a;
+}
+
+footer .subscribe
+{
+	margin-top: 20px;
+}
+
+footer input
+{
+	width: 220px;
+	padding: 15px 12px;
+	background: #334F6C;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+
+footer .subscribe a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 12px 15px;
+	background-color: #fff;
+	font-weight: 600;
+}
+
+footer .subscribe a.yellow
+{
+	color: #fff;
+	background: #fdc93b;
+	transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+
+footer .copyright
+{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+footer .copyright p, footer .copyright p > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .copyright .pro-links
+{
+	margin-top: 0px;
+}
+
+footer .copyright .pro-links i
+{
+	background-color: #5f7185;
+	color: #fff;
+}
+
+footer .copyright .pro-links i:hover
+{
+	background: #fdc93b;
+	color: #2c2c2c;
+}
+/*------------- Footer section styling ends ------------*/
+
+
+
+/*---------------------------------------------------------*/
+/*-------------------- Ipad screen styling ----------------*/
+/*---------------------------------------------------------*/
+@media screen and (max-width: 789px)
+{
+	nav
+	{
+		padding: 15px 20px;
+	}
+
+	nav img
+	{
+		width: 130px;
+	}
+
+	#menu-btn
+	{
+		display: initial;
+	}
+
+	#menu-close
+	{
+		display: initial;
+		font-size: 1.6rem;
+		color: #fff;
+		padding: 30px 0 20px 20px;
+	}
+
+	nav .navigation ul
+	{
+		position: absolute;
+		top: 0;
+		right: -220px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 220px;
+		height: 100vh;
+		background: rgba(17, 20, 104, 0.45);
+		backdrop-filter: blur(4.5px);
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		transition: 0.3s ease-in;
+	}
+
+	nav .navigation ul.active
+	{
+		right: 0;
+	}
+
+	nav .navigation ul li
+	{
+		padding: 20px 0 20px 40px;
+		margin-left: 0;
+	}
+
+	nav .navigation ul li a
+	{
+		color: #fff;
+	}
+
+	#home
+	{
+		padding: 0px;
+	}
+
+	#home p
+	{
+		width: 90%;
+	}
+
+	#features
+	{
+		padding: 8vw 4vw 0 4vw;
+	}
+
+	#course
+	{
+		padding: 8vw 4vw 8vw 4vw;
+	}
+
+	#registration
+	{
+		padding: 6vw 4vw 6vw 4vw;
+		gap: 2.2rem;
+	}
+
+	#registration .reminder .time
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 40px;
+	}
+
+	#experts
+	{
+		padding: 8vw 4vw 6vw 4vw;
+	}
+
+	footer .copyright .pro-links
+	{
+		margin-top: 20px;
+	}
+}
+
+
+@media screen and (max-width: 475px)
+{
+	#registration
+	{
+		flex-direction: column;
+	}
+
+	.reminder p, .reminder h1
+	{
+		text-align: center;
+	}
+
+	.reminder h1
+	{
+		font-size: 1.8rem;
+	}
+
+	#registration .reminder .time
+	{
+		justify-content: space-evenly;
+		margin-top: 20px;
+	}
+}
+
+/* department list styling*/
+#dep_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+	list-style: none;
+}
+
+.department-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f5f5f5;
+	padding: 15px;
+	border-radius: 12px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	width: 250px;
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.department-item:hover {
+	transform: translateY(-5px);
+}
+
+.department-icon {
+	width: 60px;
+	height: 60px;
+	object-fit: contain;
+	margin-bottom: 10px;
+}
+
+
+
+
+/* community expert list styling*/
+/* Container styling for the whole list */
+#expert_list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 20px;
+	justify-content: center;
+	list-style: none;
+}
+
+/* Each expert card */
+#expert_list .expert-card {
+	background: #fafaf1;
+	border-radius: 20px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px;
+	padding: 20px;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: box-shadow 0.3s ease;
+}
+
+#expert_list .expert-card:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px;
+}
+
+/* Circular profile image */
+.profile-img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #ddd;
+	margin-bottom: 15px;
+}
+
+/* Text styles */
+.expert-name {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	margin: 5px 0;
+}
+
+.expert-skill,
+.expert-dept,
+.expert-exp {
+	font-size: 0.95rem;
+	color: #666;
+	text-align: center;
+	margin: 3px 0;
+}
+
+
+
+
+
+/* Phone box styling */
+.phone-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	background: #eef1ff;
+	padding: 8px 12px;
+	border-radius: 8px;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #333;
+}
+
+.phone-label {
+	font-weight: 600;
+	color: #1a237e;
+}
+
+.phone-number {
+	color: #0d47a1;
+	text-decoration: none;
+	font-family: monospace;
+	font-weight: 500;
+}
+
+.phone-number:hover {
+	text-decoration: underline;
+}
+
+
+/* Library Books styling CSS*/
+#book_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.book-card {
+  background: #fff;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.book-info {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.book-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.book-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+@media (max-width: 600px) {
+  #book_list {
+    gap: 16px;
+  }
+
+  .book-card {
+    width: 90%;
+  }
+
+  .book-cover {
+    height: 240px;
+  }
+}
+
+/*Skill Styling in CSS*/
+/* Skill Container Styling */
+#skill_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Skill Card Styling */
+.skill-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Hover Animation */
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Skill Image */
+.skill-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Skill Title */
+.skill-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 12px 0 6px;
+}
+
+/* Introduction Text */
+.skill-intro {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Duration */
+.skill-duration {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+/* Read More Button */
+.read-more-btn {
+  padding: 6px 12px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+/* Read More Button Hover */
+.read-more-btn:hover {
+  background-color: #004c99;
+}
+
+
+
+/* Skill Detial Page Styling in CSS*/
+#skill-detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.skill-detail-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-detail-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.skill-detail-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.skill-detail-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.skill-detail-intro {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.skill-detail-desc {
+  margin-top: 10px;
+}
+
+/* Feature List Layout */
+#feature_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Feature Card Styling */
+.feature-card {
+  background-color: #ffffff;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.feature-description {
+  font-size: 0.95rem;
+  color: #555;
+  max-height: 60px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.feature-description.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+/* Read More Button */
+.read-more-btn {
+  align-self: flex-start;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  color: #fff;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #005fa3;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-desc {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.feature-desc.collapsed {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.read-more-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/*Payment Accounts Styling in CSS*/
+.payment-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.payment-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.payment-card:hover {
+    transform: translateY(-2px);
+}
+
+.account-holder {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.account-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.account-number {
+    font-weight: 500;
+}
+
+.account-type {
+    background-color: #e7f0ff;
+    color: #0066cc;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+
+/* Payment Structure Styling using CSS*/
+/* Payment Structure Card Styles */
+#paymentGuide_list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 0;
+	list-style: none;
+	justify-content: center;
+	margin-top: 20px;
+  }
+  
+  .payment-card {
+	background-color: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	width: 300px;
+	padding: 20px;
+	transition: transform 0.3s ease;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .payment-card:hover {
+	transform: translateY(-5px);
+  }
+  
+  .department-name {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #2a2a2a;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 6px;
+  }
+  
+  .semester-fee,
+  .payment-note {
+	font-size: 0.95rem;
+	color: #444;
+	margin-top: 8px;
+	line-height: 1.4;
+  }
+  
+  .semester-fee strong,
+  .payment-note strong {
+	color: #2c3e50;
+  }
+  
+  @media (max-width: 600px) {
+	.payment-card {
+	  width: 90%;
+	}
+  }
+
+  /* Department Guides Styling using CSS*/
+  #departmentGuide_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .department-card {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .department-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 8px 30px rgb(0 0 0 / 0.15);
+  }
+  
+  .department-name {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #1e2a78;
+	margin-bottom: 12px;
+	letter-spacing: 0.03em;
+  }
+  
+  .department-row {
+	display: flex;
+	justify-content: flex-start;
+	gap: 24px;
+	margin-bottom: 14px;
+	font-size: 0.95rem;
+	color: #3a3a3a;
+	font-weight: 600;
+  }
+  
+  .department-row span {
+	background-color: #e8eaf6;
+	padding: 6px 14px;
+	border-radius: 20px;
+	box-shadow: inset 0 0 6px rgb(0 0 0 / 0.05);
+  }
+  
+  .department-duration {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #555;
+	margin-bottom: 16px;
+  }
+  
+  .department-short {
+	font-size: 1rem;
+	color: #4a4a4a;
+	margin-bottom: 24px;
+	line-height: 1.5;
+	min-height: 70px;
+  }
+  
+  .details-btn {
+	align-self: flex-start;
+	background: #1e2a78;
+	color: white;
+	border: none;
+	padding: 12px 22px;
+	font-weight: 600;
+	font-size: 1rem;
+	border-radius: 28px;
+	cursor: pointer;
+	box-shadow: 0 4px 12px rgb(30 42 120 / 0.4);
+	transition: background-color 0.3s ease;
+  }
+  
+  .details-btn:hover {
+	background-color: #2a3ab8;
+  }
+  
+  /* Exam Guide List Styling */
+  /* Exam Guide List Styling */
+#examGuide_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 24px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Each Card */
+.exam-card {
+	background: #ffffff;
+	border-radius: 16px;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+	padding: 26px;
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.exam-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 10px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Department Title */
+.exam-title {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #1e2a78;
+	margin-bottom: 16px;
+	letter-spacing: 0.02em;
+}
+
+/* Row for Date, Format, and Criteria */
+.exam-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-bottom: 18px;
+	font-size: 0.95rem;
+	color: #3a3a3a;
+	font-weight: 600;
+}
+
+.exam-row span {
+	background-color: #e8eaf6;
+	padding: 6px 14px;
+	border-radius: 20px;
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Syllabus Text */
+.exam-syllabus {
+	font-size: 1rem;
+	color: #4a4a4a;
+	margin-bottom: 16px;
+	line-height: 1.5;
+	min-height: 60px;
+}
+
+/* Study Tips Text */
+.exam-tips {
+	font-size: 1rem;
+	color: #555;
+	line-height: 1.6;
+	min-height: 60px;
+	margin-bottom: 0; /* Removed bottom space since no button */
+}
